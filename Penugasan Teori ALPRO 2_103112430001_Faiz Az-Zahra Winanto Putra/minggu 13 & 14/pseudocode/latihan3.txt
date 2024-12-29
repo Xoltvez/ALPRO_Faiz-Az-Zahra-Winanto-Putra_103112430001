@@ -1,0 +1,12 @@
+program Digit
+kamus
+ n, k, j: integer
+algoritma
+ input(n)
+ for j = 1 to n do
+ for k = 1 to n do
+ output(j," ")
+ endfor
+ {asumsi pada baris ini pindah baris}
+ endfor
+endprogram

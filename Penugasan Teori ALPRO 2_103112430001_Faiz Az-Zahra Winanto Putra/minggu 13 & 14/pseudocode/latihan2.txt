@@ -1,0 +1,15 @@
+program Digit
+kamus
+ num, d, counter : integer
+algoritma
+ input(num)
+ counter = 0
+ while num > 0 do
+ d = num mod 10
+ if d mod 2 == 0 and d != 0 then
+ counter = counter + 1
+ endif
+ num = num div 10
+ endwhile
+ output(counter)
+endprogram

@@ -1,0 +1,19 @@
+program MatriksDiagonal
+variabel
+    angka, baris, kolom: integer
+
+algoritma
+    input(angka)
+
+    for baris = 1 to angka do
+        output(newline)   // Pindah ke baris berikutnya
+
+        for kolom = 1 to angka do
+            if baris == kolom atau baris + kolom == angka + 1 then
+                output(baris, " ") 
+            else
+                output("  ") 
+            end if
+        end for
+    end for
+end program
