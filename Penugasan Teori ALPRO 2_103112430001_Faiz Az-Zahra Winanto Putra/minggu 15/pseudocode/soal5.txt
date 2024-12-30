@@ -1,0 +1,18 @@
+program iceCream
+variabel
+    kTidur, tKebun, tMain: integer
+    kondisi1, kondisi2, kondisi3: boolean
+
+algoritma
+    input(kTidur, tMain, tKebun)
+
+    kondisi1 = (kTidur >= 60) dan (tMain >= 75) dan (tKebun >= 60)
+    kondisi2 = (kTidur >= 80) dan (tKebun >= 80)
+    kondisi3 = (kTidur >= 100)
+
+    if kondisi1 atau kondisi2 atau kondisi3 then
+        output("Ice cream")
+    else
+        output("Tidak")
+    end if
+end program

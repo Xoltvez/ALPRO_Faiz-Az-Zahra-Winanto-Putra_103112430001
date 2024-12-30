@@ -1,0 +1,23 @@
+program Novel  
+
+kamus 
+
+        p, r: integer 
+
+        hari: integer 
+
+algoritma 
+
+        input(p, r) 
+
+        hari = p div r 
+
+        if p mod r > 0 then 
+
+               hari = hari + 1 
+
+        endif 
+
+        output(hari, "hari") 
+
+endprogram

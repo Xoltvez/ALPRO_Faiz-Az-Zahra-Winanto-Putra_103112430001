@@ -1,0 +1,17 @@
+program ServiceMobil
+variabel
+    datang, jdatang, mdatang, durasi, jselesai, mselesai: integer
+
+algoritma
+    input(jdatang, mdatang, durasi)
+
+    datang = (jdatang * 60) + mdatang + durasi
+    jselesai = datang div 60
+    mselesai = datang mod 60
+
+    if jselesai < 20 atau (jselesai = 20 dan mselesai = 0) then
+        output(jselesai, mselesai)
+    else
+        output("Silahkan datang kembali besok")
+    end if
+end program

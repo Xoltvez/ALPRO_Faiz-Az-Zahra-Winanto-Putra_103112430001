@@ -1,0 +1,14 @@
+program ShimerShine
+variabel
+    x1, x2: integer
+    status: boolean
+
+algoritma
+    input(x1, x2)
+
+    status = (x1 mod 2 = 0 dan x2 mod 2 ≠ 0) atau (x1 mod 2 ≠ 0 dan x2 mod 2 = 0)
+
+    if status = true then
+        output("Berhasil")
+    end if
+end program

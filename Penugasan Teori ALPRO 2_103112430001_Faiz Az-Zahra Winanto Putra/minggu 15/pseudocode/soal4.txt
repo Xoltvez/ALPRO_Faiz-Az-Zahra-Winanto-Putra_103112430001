@@ -1,0 +1,17 @@
+program marketDay
+variabel
+    x, y, z: integer
+    belanja, diskon: float
+
+algoritma
+    input(x, y, z)
+
+    diskon = (z * x) / 100.0
+
+    if diskon > y then
+        diskon = y
+    end if
+
+    belanja = z - diskon
+    output(format("%.0f Rupiah", belanja))
+end program

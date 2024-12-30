@@ -1,0 +1,19 @@
+program AMPM
+variabel
+    jam12, jam24: integer
+
+algoritma
+    input(jam24)
+
+    if jam24 mod 12 = 0 then
+        jam12 = 12
+    else
+        jam12 = jam24 mod 12
+    end if
+
+    if jam24 < 12 then
+        output(jam12, " AM")
+    else
+        output(jam12, " PM")
+    end if
+end program

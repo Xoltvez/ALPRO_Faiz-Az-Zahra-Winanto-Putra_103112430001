@@ -1,0 +1,14 @@
+program Novel
+variabel
+    p, r, hari: integer
+
+algoritma
+    input(p, r)
+    hari = p / r
+
+    if p mod r > 0 maka
+        hari = hari + 1
+    end if
+
+    output(hari, " Hari")
+end program
